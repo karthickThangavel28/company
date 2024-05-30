@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anandnivash Creating Possibilities</title>
+  <link rel="icon" href="comlogo.png">
+<!-- image slider cdn -->
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- icon cdn -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- scroll animation cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <!-- main css file  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><img src="comlogo.png" alt="Company Logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="dropdown">
+                <a href="#about">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#history">History</a></li>
+                  <li><a href="#mission">Mission</a></li>
+                  <li><a href="#career">Career</a></li>
+                </ul>
+              </li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul> 
+    <div class="toggle-sun">
+        <button id="theme-toggle-button">
+          <i id="theme-icon" class="bx bx-sun"></i>
+        </button>
+      </div>
+      <div class="hamburger-menu">&#9776;</div>
+  </nav>
+  <section id="home" class="section" data-aos="fade-zoom-in">
+    <video autoplay muted loop id="bg-video">
+      <source src="path-to-your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>Welcome to Anandnivash</h1>
+      <p>Creating possibilities in designing, consultation, construction, home styling, and turnkey projects.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section" data-aos="fade-down" data-aos-duration="1000">
+    <h2>Our Services</h2>
+    <div class="services-list">
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-pencil-alt"></i> <!-- Example icon -->
+            </div>
+            <h3>Designing</h3>
+            <p>Innovative and creative design solutions tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-comments"></i> <!-- Example icon -->
+            </div>
+            <h3>Consultation</h3>
+            <p>Expert advice and consultation for your projects.</p>
+        </div>
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-tools"></i> <!-- Example icon -->
+            </div>
+            <h3>Construction</h3>
+            <p>Reliable and efficient construction services.</p>
+        </div>
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-home"></i> <!-- Example icon -->
+            </div>
+            <h3>Home Styling</h3>
+            <p>Professional home styling to enhance your living spaces.</p>
+        </div>
+        
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-cogs"></i> <!-- Example icon -->
+            </div>
+            <h3>Turnkey Projects</h3>
+            <p>Complete turnkey solutions for hassle-free project execution.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="section" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-gallery">
+        <!-- Project 1 -->
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <p>Project 1 Description</p>
+            <a href="project1-details.html" class="read-more">  <i class='bx bx-right-arrow-circle'></i></a>
+        </div>
+        <!-- Project 2 -->
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <p>Project 2 Description</p>
+            <a href="project2-details.html" class="read-more">  <i class='bx bx-right-arrow-circle'></i></a>
+        </div>
+        <!-- Project 3 -->
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3">
+            <p>Project 3 Description</p>
+            <a href="project3-details.html" class="read-more">  <i class='bx bx-right-arrow-circle'></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section" data-aos="fade-down">
+    <h2>About Us</h2>
+    <p>Learn about our company history, mission, and team.</p>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Team Member 1 -->
+            <div class="swiper-slide">
+                <div class="team-member">
+                    <img src="ven.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+                <div class="team-member">
+                    <img src="main.jpg" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Marketing Officer</p>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="swiper-slide">
+                <div class="team-member">
+                    <img src="ven.jpg" alt="Team Member 3">
+                    <h3>Michael Johnson</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<section id="contact" class="section" data-aos="fade-down">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<section id="location" class="section">
+    <div class="address-map-container">
+        <div class="address-info">
+            <h3>Our Address</h3>
+            <p>Anandnivash creating possibility,<br>
+               1/126 Ganapathi,<br>
+               Coimbatore-638426<br>
+               Mobile: 1234567890
+            </p>
+        </div>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62653.585164369724!2d76.93678292132427!3d11.049940255706522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85869d2ddad99%3A0x4c2387c362112525!2sGanapathy%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1717112970872!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div>
+        <p>My Address:</p>
+        <p>Anandnivash creating possibility,<br>
+           1/126 Ganapathi,<br>
+           Coimbatore-638426<br>
+           Mobile: 1234567890
+        </p>
+    </div>
+    <div>
+        <p>My Profiles:</p>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+    </div>
+    <div>
+        <p>My Works:</p>
+        <a href="#">Work 1</a>
+        <a href="#">Work 2</a>
+        <a href="#">Work 3</a>
+    </div>
+    <div>
+        <p>Career:</p>
+        <a href="#">Apply Now</a>
+    </div>
+    <div class="arrow-up" onclick="scrollToTop()">
+        <i class='bx bx-chevron-up'></i>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
